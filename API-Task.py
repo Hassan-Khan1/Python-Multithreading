@@ -29,14 +29,14 @@ for i in range(n):
 
   urllib.request.urlretrieve(list1[i],f'Hassan{i}.jpg')
 
-# n = 0
-# try:
-#   # for n in  range(40):
-#   while True:
-#     pakg_str = json.dumps(pak_json[n]['download_url'])
+n = 0
+try:
+  # for n in  range(40):
+  while True:
+    pakg_str = json.dumps(pak_json[n]['download_url'])
 
-#     print(pakg_str.replace('"',''))
-#     n = n+1
+    print(pakg_str.replace('"',''))
+    n = n+1
 
     
     # urllib.request.urlretrieve(pakg_str,f'Hassan.jpg')
@@ -44,8 +44,8 @@ for i in range(n):
     # urllib.request.urlretrieve(pakg_str, "/home/hassan/Desktop/Python Threading/DDDDDD.jpg")
     # urllib.request.urlretrieve(pakg_str, filename)
 
-# except:
+except:
   
-#   print("Index is Out of Range")
+  print("Index is Out of Range")
 
 
