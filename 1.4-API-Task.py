@@ -27,13 +27,13 @@ class ImageDownload:
       ss = [random.choice('0123456789') for _ in range(1,5)]
       ss2 = "".join(ss)  
       # print(ss2 , time.thread_time())
-      Image1  = urllib.request.urlretrieve(list[0],f'Imagee{ss2}.jpg')
+      Image1  = urllib.request.urlretrieve(list[0],f'images/Imagee{ss2}.jpg')
       print(ss2, ' : ',list[0],' :  ',currentThread().getName())
       
 
-class CL:
-  def PO(self):
-    for n in range(10):
+class Multi_Thread:
+  def thread_loop(self):
+    for n in range(30):
       print("Thread Start::  " , n)
       # IM = ImageDownload()
       t = Thread(target=ImageDownload,name = f"THread Number : {n}")
@@ -41,6 +41,6 @@ class CL:
       print("Thread End::  " , n)
 
    
-v1 = CL()
-v1.PO()
+T1 = Multi_Thread()
+T1.thread_loop()
 

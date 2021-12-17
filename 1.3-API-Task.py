@@ -36,7 +36,7 @@ class ImageDownload:
         ss = [random.choice('0123456789') for _ in range(1,5)]
         ss2 = "".join(ss)  
         # print(ss2 , time.thread_time())
-        Image1  = urllib.request.urlretrieve(list[n],f'Image{ss2}.jpg')
+        Image1  = urllib.request.urlretrieve(list[n],f'images/Image{ss2}.jpg')
         
 
         print(ss2, ' : ',list[n],' :  ',n ,)
