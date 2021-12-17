@@ -8,6 +8,10 @@ r = requests.get("https://picsum.photos/v2/list")
 # print(response.json())
 pak_json = r.json()
 
+# pakg_str = json.dumps(pak_json,indent=2).count
+# print(pakg_str)
+# https://picsum.photos/id/0/5616/3744
+
 
 
 class ImageDownload:
@@ -38,3 +42,8 @@ t2 = Thread(target=p.image)
 
 t1.start()
 t2.start()
+
+t1.join()
+t2.join()
+
+print("Main Thread")
