@@ -19,7 +19,6 @@ class ImageDownload:
           print("333333")
           t.start()
           threads.append(t)
-      
 
   # def TT(self):
       
@@ -67,11 +66,9 @@ class ImageDownload:
 # TT.TT()
 IM = ImageDownload(10)
 
-# IM.TT()
-
+IM.TT()
 
 # t1 = Thread(target=p.image)
-
 
 # t1.start()
 # t2.start()
@@ -81,7 +78,7 @@ IM = ImageDownload(10)
 
 # print("Main Thread")
 
-
+# p = ImageDownload
 # o = 10
 # # t1 = Thread(target=p.image)
 # for h in range(o):
